@@ -1,0 +1,167 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #212121;
+}
+
+/* forms */
+.form {
+    width: 600px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.title {
+    width: 500px;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.form-input {
+    display: block;
+    width: 400px;
+    padding: 5px;
+    border: 1px solid #2f2f2f;
+    border-radius: 5px;
+    font-family: Lato;
+    font-size: 15px;
+}
+
+.form-input:focus {
+    outline-color: #eb950a;
+}
+
+.form-textarea {
+    width: 400px;
+    height: 150px;
+    padding: 5px;
+    border: 1px solid #2f2f2f;
+    border-radius: 10px;
+    font-family: Lato;
+    font-size: 15px;
+}
+
+.form-textarea:focus {
+    outline-color: #eb950a;
+}
+
+.button {
+    background-color: #ff9d00;
+    border-radius: 10px;
+    width: 90px;
+    height: 40px;
+    color: #242424;
+    font-weight: bold;
+    border: 1px solid #ffffff;
+    padding: auto;
+    margin: 0 15px 0 0;
+}
+
+.button:disabled {
+    background-color: #957407;
+    color: #dedede;
+    border: 1px solid #2f2f2f;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #ffb100;
+    cursor: pointer;
+}
+
+.button:active {
+    background-color: #01082e;
+}
+
+
+.form-fieldset {
+    border: 1px solid #404040;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    background-color: #333333;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10%;
+}
+
+.logo {
+    width: 50px;
+    height: 60px;
+    margin: 5px 0 0 0;
+}
+
+.navLinks li {
+    display: inline-block;
+    padding: 0px 10px;
+    list-style: none;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: rgb(255, 255, 255);
+}
+
+.navLinks li a {
+    transition: all 0.5s ease 0s;
+}
+
+.navLinks li a:hover {
+    color: #ff8f0d;
+    cursor: pointer;
+}
+
+.backgroundImg {
+    margin-left: -1200px;
+    margin-top: 150px;
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    opacity: 0.5;
+    z-index: -10;
+}
+
+.backgroundImg2 {
+    margin-left: 600px;
+    margin-top: 100px;
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    opacity: 0.5;
+    z-index: -10;
+}
+
+footer {
+    display: flex;
+    background-color: #333333;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    padding: 10px 10%;
+}

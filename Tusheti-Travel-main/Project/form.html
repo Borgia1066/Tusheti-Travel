@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="formStyle.css">
+    <title>Tusheti Travel Form</title>
+</head>
+
+<body>
+
+
+    <section class="firstPage">
+        <header>
+            <a href="index.html" class="logo"><img src="Photos/aries.png" alt=""></a>
+            <nav class="navLinks">
+                <ul>
+                    <li><a data-link="allRouts" class="scrollTo">Routs</a></li>
+                    <li><a data-link="aboutUs" class="scrollTo">About Us</a></li>
+                    <li><a data-link="gallery" class="scrollTo">Gallery</a></li>
+                    <li><a href="form.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+
+
+    <div class="form">
+        <img src="Photos/Mountain.png" class="backgroundImg">
+        <img src="Photos/Mountain.png" class="backgroundImg2">
+
+        <h1 class="title">Enter Parameters</h1>
+        <form action="user.php" method="post">
+
+            <div class="form-fieldset">
+                <div class="form-group">
+                    <input class="form-input" type="text" name="name" placeholder="Your name">
+                </div>
+
+                <div class="form-group">
+                    <input class="form-input" type="email" name="email" placeholder="Your E-mail">
+                </div>
+
+                <div class="form-group">
+                    <input class="form-input" type="password" name="Password" placeholder="Create a Password">
+                </div>
+
+                <div class="form-group">
+                    <input class="form-input" type="tel" name="tel" placeholder="Insert your mobile number">
+                </div>
+
+                <div class="form-group">
+                    <textarea class="form-textarea" cols="20" rows="20" name="text" placeholder="About you"></textarea>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <select name="country">
+                    <option>Latvia</option>
+                    <option>Austria</option>
+                    <option>Georgia</option>
+                    <option>Ukraine</option>
+                    <option>Russia</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="Gender_male">Male</label>
+                <input id="Gender_male" type="radio" name="gender">
+
+                <label for="Gender_female">Female</label>
+                <input id="Gender_female" type="radio" name="gender">
+            </div>
+
+            <div class="form-group">
+                <input type="checkbox" id="rules">
+                <label for="rules">I agree with the rules</label>
+            </div>
+
+            <button class="button" type="submit" name="send">Send</button>
+            <button class="button" type="reset" name="delete">Clear</button>
+
+        </form>
+
+    </div>
+
+    <footer class="footer">
+        <a href="index.html" class="logo"><img src="Photos/aries.png" alt=""></a>
+    </footer>
+
+    <script src="main.js"></script>
+
+
+</body>
+
+</html>

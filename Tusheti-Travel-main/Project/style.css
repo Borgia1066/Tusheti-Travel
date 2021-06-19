@@ -1,0 +1,727 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+body {
+    background-color: #eaeaea;
+}
+
+/* Header */
+header {
+    display: flex;
+    background-color: #333333;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10%;
+}
+
+.logo {
+    width: 50px;
+    height: 60px;
+    margin: 5px 0 0 0;
+}
+
+.navLinks li {
+    display: inline-block;
+    padding: 0px 10px;
+    list-style: none;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: rgb(255, 255, 255);
+}
+
+.navLinks li a {
+    transition: all 0.5s ease 0s;
+}
+
+.navLinks li a:hover {
+    color: #ff8f0d;
+    cursor: pointer;
+}
+
+/* End of Header */
+
+/*Landing Page*/
+
+.firstPage {
+    background-image: url(Photos/gaetan-meyer-yT3mppn35W8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.contentWrapper {
+    margin-left: 200px;
+}
+
+.contentWrapper h1 {
+    width: 600px;
+    height: 100px;
+    margin-top: 250px;
+    font-family: Playfair Display;
+    font-weight: lighter;
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+}
+
+.contentWrapper h2 {
+    width: 380px;
+    height: 70px;
+    margin-top: 15px;
+    font-family: Lato;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.5;
+    color: rgb(255, 255, 255);
+}
+
+.contentWrapper a {
+    width: 180px;
+    height: 30px;
+    margin-top: 15px;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: rgb(241, 204, 103);
+    cursor: pointer;
+}
+
+.contentWrapper a {
+    transition: all 0.5s ease 0s;
+}
+
+.contentWrapper a:hover {
+    color: #ff8f0d;
+}
+
+.contentWrapper p {
+    margin-top: 400px;
+}
+
+/* End of the Landing Page*/
+
+/*Second Page*/
+.contentWrapper1 {
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    margin-left: 200px;
+}
+
+.contentWrapper1 h1 {
+    width: 430px;
+    height: 140px;
+    margin-top: 200px;
+    font-family: Playfair Display;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1.4;
+    color: rgb(58, 58, 58);
+}
+
+.contentWrapper1 h2 {
+    width: 480px;
+    height: 150px;
+    margin-top: 20px;
+    font-family: Lato;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 1.6;
+    color: rgb(58, 58, 58);
+
+}
+
+.contentWrapper1 h3 {
+    width: 480px;
+    height: 100px;
+    margin-top: 10px;
+    font-family: Lato;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 1.6;
+    color: rgb(58, 58, 58);
+
+}
+
+
+/* Cards */
+
+.contentWrapper1 .cards {
+    transition: all 0.5s ease 0s;
+}
+
+
+.cards img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.cards .imageOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: Lato;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    border-radius: 10px;
+
+}
+
+
+.cards .imageTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.cards .imageDescription {
+    font-size: 20px;
+    word-spacing: 5px;
+    font-weight: normal;
+}
+
+.cards .Call {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+    color: rgb(235, 175, 12);
+}
+
+.cards .imageOverlay > * {
+    transform: translateY(25px);
+    transition: transform 0.25s;
+}
+
+
+.cards .imageOverlay:hover > * {
+    transform: translateY(0);
+}
+
+.cards .imageOverlay > *:hover {
+    transform: translateY(0);
+}
+
+.cards .imageOverlay:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.cards .Call:hover {
+    color: rgb(255, 201, 55);
+    padding-top: 6px;
+    font-size: 22px;
+}
+
+
+/* Card1 */
+.card1 {
+    position: relative;
+    width: 360px;
+    height: 650px;
+    margin: -450px 0 50px 500px;
+}
+
+/* Card2 */
+.card2 {
+    position: relative;
+    width: 360px;
+    height: 650px;
+    margin: -700px 0 50px 900px;
+}
+
+/* Card3 */
+
+.card3 {
+    position: relative;
+    width: 360px;
+    height: 650px;
+    margin: -700px 0 20px 1300px;
+}
+
+
+/* Arrows */
+
+.leftArrow {
+    width: 60px;
+    text-align: center;
+    height: 60px;
+    border-radius: 10px;
+    background-color: rgb(200, 200, 200);
+    margin: 0 0 50px 500px;
+    transition: all 0.5s ease 0;
+}
+
+.leftArrow .Text {
+    font-weight: bold;
+    font-family: Lato;
+    padding-top: 20px;
+}
+
+.leftArrow:hover {
+    background-color: rgb(154, 154, 154);
+    cursor: pointer;
+}
+
+
+.rightArrow {
+    width: 60px;
+    text-align: center;
+    height: 60px;
+    border-radius: 10px;
+    background-color: rgb(255, 157, 0);
+    margin: -110px 0 50px 570px;
+    transition: all 0.5s ease 0;
+}
+
+.rightArrow .Text {
+    font-weight: bold;
+    font-family: Lato;
+    padding-top: 20px;
+}
+
+.rightArrow:hover {
+    background-color: rgb(195, 123, 9);
+    cursor: pointer;
+}
+
+/* numbers */
+
+.flexContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: -100px 0 50px 1300px;
+}
+
+.flexContainer > div {
+    font-weight: bold;
+    text-decoration-color: #242424;
+    margin: 10px;
+    font-size: 20px;
+}
+
+/* Ball */
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #e09200;
+    margin: -85px 0 50px 1300px;
+}
+
+/* Gallery */
+
+.galleryContainer {
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.galleryContainer .Title {
+    font-size: 50px;
+    font-family: Playfair Display, serif;
+    font-weight: bold;
+    color: #212121;
+    margin-top: 50px;
+}
+
+.Title::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 3px;
+    margin-top: 70px;
+    background-color: #fa9e0a;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite;
+}
+
+.galleryPics {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 20px;
+}
+
+.galleryPics > div {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.galleryPics .One {
+    position: relative;
+    background-image: url(Photos/11.jpg);
+    background-size: cover;
+    height: 500px;
+    width: 600px;
+    margin: 50px 0 0 200px;
+}
+
+.galleryPics .Two {
+    position: relative;
+    background-image: url(Photos/22.jpg);
+    background-size: cover;
+    height: 500px;
+    width: 500px;
+    margin: 50px 0 0 0;
+}
+
+.galleryPics .Three {
+    position: relative;
+    background-image: url(Photos/33.jpg);
+    background-size: cover;
+    height: 500px;
+    width: 400px;
+    margin: 50px 0 0 0;
+}
+
+.galleryPics .Four {
+    background-image: url(Photos/44.jpg);
+    background-size: cover;
+    height: 500px;
+    width: 755px;
+    margin: 570px 0 50px -1560px;
+
+}
+
+.galleryPics .Five {
+    background-image: url(Photos/55.jpg);
+    background-size: cover;
+    height: 500px;
+    width: 755px;
+    margin: 570px 0 50px -825px;
+
+}
+
+/* Routs */
+
+.routs {
+    width: 100%;
+    padding-top: 100px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.routs h1 {
+    font-family: Playfair Display;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 50px color: rgb(51, 51, 51);
+}
+
+.routs h2 {
+    font-family: Lato;
+    font-size: 25px;
+    margin-top: 10px;
+    line-height: 1.6;
+    color: rgb(58, 58, 58);
+}
+
+.routs h1::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 3px;
+    margin-top: 70px;
+    background-color: #fa9e0a;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite;
+}
+
+
+.routCards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 20px;
+}
+
+.routCards > div {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.routOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(39, 39, 39, 0.6);
+    color: #d3d3d3;
+    font-family: Lato;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    border-radius: 10px;
+
+}
+
+
+.routCards .routTitle {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.routCards .routDescription {
+    font-size: 20px;
+    word-spacing: 5px;
+    font-weight: normal;
+}
+
+.routCards .routCall {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+    color: rgb(235, 175, 12);
+}
+
+.routOverlay {
+    transition: transform 1s;
+}
+
+.routOverlay:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.routCall:hover {
+    color: rgb(255, 201, 55);
+    padding-top: 6px;
+    font-size: 22px;
+}
+
+.routCards .First {
+    position: relative;
+    background-image: url(Photos/11.jpg);
+    background-size: cover;
+    height: 500px;
+    width: 600px;
+    margin: 50px 0 0 200px;
+}
+
+
+.routCards .Two {
+    position: relative;
+    background-image: url(Photos/22.jpg);
+    background-size: cover;
+    height: 500px;
+    width: 500px;
+    margin: 50px 0 0 0;
+}
+
+.routCards .Three {
+    position: relative;
+    background-image: url(Photos/33.jpg);
+    background-size: cover;
+    height: 500px;
+    width: 400px;
+    margin: 50px 0 0 0;
+}
+
+
+/* About Us */
+
+.aboutUs {
+    padding-top: 100px;
+    margin-bottom: 30px;
+}
+
+.aboutUs h1 {
+    font-family: Playfair Display;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 50px;
+    text-align: center;
+    color: rgb(51, 51, 51);
+}
+
+.aboutUs h2 {
+    font-family: Lato;
+    justify-content: center;
+    text-align: center;
+    width: 1200px;
+    font-size: 25px;
+    line-height: 1.6;
+    color: rgb(58, 58, 58);
+    margin: 20px 0 70px 370px;
+}
+
+.aboutUs h1::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 3px;
+    margin-top: 70px;
+    background-color: #fa9e0a;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite;
+}
+
+
+.backgroundImg{
+    margin-left: -800px;
+    margin-top: 300px;
+    position: absolute;
+    width: 70%;
+    height: 50%;
+    opacity: 0.5;
+    z-index: -10;
+}
+
+
+footer {
+    display: flex;
+    background-color: #333333;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10%;
+}
+
+@keyframes animate {
+    0% {
+        width: 100px;
+    }
+
+    50% {
+        width: 250px;
+    }
+
+    100% {
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    .contentWrapper h1 {
+        font-size: 50px;
+        display: flex;
+        text-align: justify;
+    }
+
+    .contentWrapper h2 {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .contentWrapper1 .cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards .card1 {
+        position: relative;
+        width: 360px;
+        height: 650px;
+        margin: 0 0 50px 200px;
+    }
+
+    .cards .card2 {
+        position: relative;
+        width: 360px;
+        height: 650px;
+        margin: 0 0 50px 200px;
+    }
+
+    .cards .card3 {
+        position: relative;
+        width: 360px;
+        height: 650px;
+        margin: 0 0 50px 200px;
+    }
+
+    .leftArrow {
+        width: 60px;
+        text-align: center;
+        height: 60px;
+        border-radius: 10px;
+        background-color: rgb(200, 200, 200);
+        margin: 0 0 50px 200px;
+        transition: all 0.5s ease 0;
+    }
+
+    .rightArrow {
+        width: 60px;
+        text-align: center;
+        height: 60px;
+        border-radius: 10px;
+        background-color: rgb(255, 157, 0);
+        margin: -110px 0 50px 300px;
+        transition: all 0.5s ease 0;
+    }
+
+    .flexContainer {
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0 0 50px 200px;
+    }
+
+    .circle {
+        width: 30px;
+        height: 30px;
+        border-radius: 20px;
+        background-color: #e09200;
+        margin: -85px 0 50px 200px;
+    }
+
+    .galleryPics {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 4fr);
+        grid-column-gap: 20px;
+    }
+
+    .aboutUs h1 {
+        font-size: 30px;
+        margin-top: 20px;
+        text-align: right;
+        color: rgb(51, 51, 51);
+    }
+
+    .aboutUs h2 {
+        width: 800px;
+        font-size: 20px;
+        line-height: 1.3;
+        color: rgb(58, 58, 58);
+        float: left;
+        margin: 20px 0 70px 100px;
+    }
+}
